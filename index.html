@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Secrets</title>
+</head>
+<body class="page">
+
+  <form class="form-container" action="none">
+    <h1 class="form-container__heading">Create your own secret to share it with anyone you want</h1>
+
+    <textarea class="form-container__textarea" placeholder="Enter your secret here" rows="5"></textarea>
+
+    <p class="form-container__text">Or choose secret file to send</p>
+    <div class="form-container__file-input">
+      <input type="file" id="fileInput">
+      <label class="form-container__file-input-label" for="fileInput">
+        Choose a file
+      </label>
+    </div>
+
+    <p class="form-container__text">Set password if you want protect your secret</p>
+    <input class="form-container__password" type="password" placeholder="Enter your password here">
+
+    <p class="form-container__text">Choose lifetime of the secret</p>
+
+    <select class="form-container__select form-container__select-lifetime">
+      <option value="1">1 hour</option>
+      <option value="3">3 hours</option>
+      <option value="6">6 hours</option>
+      <option value="12">12 hours</option>
+      <option value="24">1 day</option>
+      <option value="72">3 days</option>
+      <option value="168">7 days</option>
+    </select>
+
+    <p class="form-container__text">Select the number of secret's views</p>
+
+    <div class="form-container__checkbox-container">
+      <input class="form-container__checkbox" type="checkbox" id="checkbox1">
+      <label class="form-container__checkbox-label" for="checkbox1">One time view</label>
+    </div>
+
+    <select class="form-container__select form-container__select-times-to-view">
+      <option value="3">3 times</option>
+      <option value="5">5 times</option>
+      <option value="10">10 times</option>
+    </select>
+
+    <button class="form-container__button" type="button">Create a secret</button>
+
+    <p class="form-container__error-message hidden">JavaScript-related message</p>
+    <p class="form-container__success-message hidden">Success message</p>
+  </form>
+
+  <script src="./index.js"></script>
+</body>
+</html>
