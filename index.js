@@ -11,7 +11,7 @@ const formContainerSuccessMessage = document.querySelector('.form-container__suc
 
 const DOMAIN_NAME = 'http://localhost:3000';
 
-window.addEventListener('load', () => {
+window.addEventListener('DOMContentLoaded', () => {
   const currentUrl = new URL(document.location.href);
   if (currentUrl.search) {
     formContainer.classList.add('hidden');
